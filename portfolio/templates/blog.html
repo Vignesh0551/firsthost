@@ -1,0 +1,9 @@
+<h3>blog</h3>
+
+<h3>vignesh has written {{value.count}} Blog</h3>
+
+{% for i in value %}
+
+<a href="{{i.id}}"><h3>{{i.blogtitle}}</h3></a>
+{{i.blogdesc|truncatechars:10}}
+{% endfor %}

@@ -1,0 +1,14 @@
+<h1>vignesh profile</h1>
+{% load static %}
+
+<a href="{% url 'blogapp:blog' %}">blog</a><br>
+
+<img src ="{% static 'photos/asus.jpg' %}"><br>
+{% for data in value  %}
+{{data.name}}<br>
+{{data.desc}}<br>
+<img src="{{data.image.url}}" height="40",width='60'><br>
+
+
+
+{%endfor%}
